@@ -1,0 +1,664 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%
+}
+/* header style */
+header{
+    position: absolute;
+    z-index: 1;
+}
+/* align logo and hamburgur in same line */
+.container{
+    display: flex;
+    width: 1262px;
+}
+/* adjust height and width of logo image */
+#logo-col img{
+    width: 15%;
+    margin-left: 20px;
+}
+/* added style to search input */
+.search-container input{
+    position: absolute;
+    padding: 10px;
+    top: 30px;
+    width: 255px;
+    border: none;
+    border-radius: 16px;
+    outline: none;
+    background-color: #ede3e3e6;
+    color: rgb(73 41 41);
+}
+/* style search button */
+.search-container button{
+    position: absolute;
+    top: 30px;
+    right: 226px;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ede3e3e6;
+    outline: none;
+    cursor: pointer;
+}
+/* set hamburgur to the right side */
+#menu{
+    position: absolute;
+    right: 34px;
+    width: 30px;
+    margin: 45px;
+    cursor: pointer;
+}
+/* cloud icon styling & hover effect*/
+.cloudIcon{
+    position: absolute;
+    height: 37px;
+    top: 32px;
+    right: 175px;
+    filter: invert(1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cloudIcon:hover{
+    background-color: rgba(211, 207, 207, 0.548)
+}
+/* Login user icon styling & hover effect*/
+#userIcon img{
+    position: absolute;
+    height: 37px;
+    right: 123px;
+    top: 32px;
+    filter: invert(1);
+    border-radius: 50%;
+    cursor: pointer;
+}
+#userIcon img:hover{
+     background-color: rgba(211, 207, 207, 0.548)
+}
+
+/* setting hamburgur heigth width */
+.bar{
+    height: 4px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+/* CSS for hamburgur's 1st line(bar) which separates (adds some space between) bar1 and bar2 */
+#bar1{
+    transform: translateY(-4px);
+}
+/* CSS for hamburgur's 3rd line(bar) which saparates (adds some space between) bar2 and bar3 */
+#bar3{
+    transform: translateY(4px);
+}
+/* Hide link of Navigation that are Home,About us,Contact us,privacy policy */
+.nav{
+    padding: 0;
+    margin: 0 20px;
+    transition: 2s ease;
+    display: none;
+}
+/* remove default style that is dots in front of navigation links */
+.nav li{
+    list-style: none;
+    padding: 15px;
+}
+/* Add white font color */
+.nav li a{
+    color: white;
+    text-decoration: none;
+}
+/* mouse over effect on Home,About us,Contact us,privacy policy  */
+.nav li a:hover{
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    border-radius: 20px;
+    box-shadow: #d3d0ce 1px 6px 12px 2px;
+}
+/* this css apply only when user click on hamburgur of the web page */
+.icon .bar{
+    background-color: #ffffff;
+}
+/* this will rotate the bar1(line 1)of hamburgur to the -45% and look like a forword slash*/
+.icon #bar1{
+    transform: translateY(4px)rotate(-45deg);
+}
+/* this will rotate the bar3(line 3)of hamburgur to the 45%  and look like backwork slash*/
+.icon #bar3{
+    transform: translateY(-4px)rotate(45deg);
+}
+/* this will hide bar2(line 2) which helps to make a cross sign from bar1 and bar2*/
+.icon #bar2{
+    opacity: 0;
+}
+/* this CSS will apply to Home,About us,Contact us,privacy policy only when click on hamburgur */
+.change{
+    background-color: rgb(2 54 79);
+    height: 100vh;
+    margin: 0;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    z-index: -100;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* this will hide logo on clicking hamburgur */
+.imgHide{
+    display: none;
+}
+.searchHide{
+    display: none;
+}
+.userHide{
+    display: none;
+}
+.cloudHide{
+    display: none;
+}
+
+/* **************Slider Styling************* */
+/* Header slider Styling */
+.slide-container{
+    position: relative;
+    width: 100%;
+}
+.slide img{
+    width: max-content;
+}
+/* left right arrow of header slider */
+.arrow{
+    position: absolute;
+    top: 55%;
+    color: #fffbfb;
+    background-color: rgb(245 241 241 / 25%);
+    padding: 8px 18px;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.arrow:hover{
+    border: 2px solid #ffffff;
+}
+.next{
+    right: 10px;
+}
+.prev{
+    left: 10px;
+}
+/* adds style to text of the header slider heading,paragraph,add channel button */
+.caption{
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    width: 66%;
+    text-align: center;
+}
+.caption h1{
+    font-size: 55px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 2px 2px black;
+    margin: 10px;
+}
+.caption p{
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+.caption .channelBtn{
+    padding: 5px 20px;
+    border: 1px solid;
+    background: #05384b;
+    border-radius: 30px;
+    outline: none;
+    font-size: 17px;
+    color: #ffffff;
+    cursor: pointer;
+} 
+.caption .channelBtn:hover{
+    box-shadow: 0 0 20px #042841;
+    border-color: #042841;
+    border: 2px solid #042841;
+    background: #ffffffab;
+    color: #000000;
+    transition: 1s;
+}
+/****************************Add Channel form**************************** */
+/* centered the form */
+.centerChannelForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 390px;
+    background: rgba(255, 255, 255);
+    border-radius: 10px;
+}
+/* style the heading of form */
+.addChannel h1{
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: black;
+    text-shadow: none;
+    border-bottom: 1px solid silver;
+}
+/* style the form with padding and border */
+.centerChannelForm form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+/* style txt_field class with bottom border */
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+/* style input fields */
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 35px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    outline: none;
+}
+/* style label,input fields */
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #3b3737;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.txt_field_label label{
+    position: absolute;
+    top: 70%;
+    font-size: 14px;
+    margin: 11px 0;
+}
+.txt_field_label input{
+    width: 100%;
+    padding: 5px 5px;
+    height: 35px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    outline: none;
+}
+/* when click on input, label will move to top-5px*/
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top: -5px;
+}
+/* styling textarea in create channel form */
+textarea{
+    outline: none;
+    border-radius: 10px;
+    padding: 8px;
+}
+/* hide Create channel form */
+#addChannelForm{
+    display: none;
+}
+
+/* ******************************Responsive Home page******************************* */
+@media only screen and (min-width: 1200px) and (max-width:1230px){
+    .next {
+        right: -10px;
+    }
+}
+
+@media screen and (min-width:1150px) and (max-width:1190px){
+    .next {
+        right: -50px;
+    }
+}
+@media screen and (min-width:1144px) and (max-width:1152px){
+    .next {
+        right: -70px;
+    }
+    .caption{
+        left: 25%;
+    }
+}
+@media screen and (min-width:1100px) and (max-width:1142px){
+    .next {
+        right: -90px;
+    }
+    .caption{
+        left: 25%;
+    }
+}
+@media screen and (min-width:1050px) and (max-width:1100px){
+    .next {
+        right: -120px;
+    }
+    .caption{
+        left: 27%;
+    }
+}
+@media screen and (min-width:1000px) and (max-width:1050px){
+    .next {
+        right: -190px;
+    }
+    .caption{
+        left: 27%;
+    }
+}
+@media screen and (min-width:960px) and (max-width: 1000px){
+    .next {
+        right: -240px;
+    }
+    .caption{
+        left: 33%;
+        width: 75%;
+    }
+}
+@media screen and (min-width:920px) and (max-width: 960px){
+    .next {
+        right: -275px;
+    }
+    .caption{
+        left: 33%;
+        width: 75%;
+    }
+}
+@media screen and (min-width:900px) and (max-width: 920px){
+    .next {
+        right: -300px;
+    }
+    .caption{
+        left: 33%;
+        width: 82%;
+    }
+}
+@media screen and (min-width:860px) and (max-width: 900px){
+    .next {
+        right: -330px;
+    }
+    .caption{
+        left: 33%;
+        width: 82%;
+    }
+}
+@media screen and (min-width:830px) and (max-width: 860px){
+    .next {
+        right: -380px;
+    }
+    .caption{
+        left: 33%;
+        width: 82%;
+    }
+}
+@media screen and (min-width:800px) and (max-width: 830px){
+    .next {
+        right: -400px;
+    }
+    .caption{
+        left: 33%;
+        width: 82%;
+    }
+}
+@media screen and (min-width:760px) and (max-width: 800px){
+    .next {
+        right: -435px;
+    }
+    .caption{
+        left: 33%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:730px) and (max-width: 760px){
+    .next {
+        right: -475px;
+    }
+    .caption{
+        left: 33%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:700px) and (max-width: 730px){
+    .next {
+        right: -510px;
+    }
+    .caption{
+        left: 37%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:660px) and (max-width: 700px){
+    .next {
+        right: -540px;
+    }
+    .caption{
+        left: 45%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:630px) and (max-width: 659px){
+    .next {
+        right: -560px;
+    }
+    .caption{
+        left: 50%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:600px) and (max-width: 630px){
+    .next {
+        right: -600px;
+    }
+    .caption{
+        left: 45%;
+        width: 100%;
+    }
+}
+@media screen and (min-width:560px) and (max-width: 600px){
+    .next {
+        right: -640px;
+    }
+    .caption{
+        left: 60%;
+        width: 100%;
+    }
+    .caption h1{
+        font-size: 50px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+}
+@media screen and (min-width:530px) and (max-width: 560px){
+    .next {
+        right: -717px;
+    }
+    .caption{
+        left: 72%;
+        width: 100%;
+    }
+    .caption h1{
+        font-size: 50px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+}
+@media screen and (min-width:500px) and (max-width: 530px){
+    .next {
+        right: -720px;
+    }
+    .caption{
+        left: 72%;
+        width: 120%;
+    }
+    .caption h1{
+        font-size: 40px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+}
+@media screen and (min-width:460px) and (max-width: 500px){
+    .next {
+        right: -750px;
+    }
+    .caption{
+        left: 72%;
+        width: 120%;
+    }
+    .caption h1{
+        font-size: 40px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+}
+@media screen and (min-width:400px) and (max-width: 460px){
+    .next {
+        right: -800px;
+    }
+    .caption{
+        left:80%;
+        width: 150%;
+    }
+    .caption h1{
+        font-size: 40px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+}
+@media screen and (min-width:350px) and (max-width: 400px){
+    .next {
+        right: -850px;
+    }
+    .caption{
+        left:110%;
+        width: 150%;
+    }
+    .caption h1{
+        font-size: 40px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+}
+@media screen and (min-width:300px) and (max-width: 350px){
+    .next {
+        right: -800px;
+    }
+    .caption{
+        left: 95%;
+        width: 200%;
+    }
+    .caption h1{
+        font-size: 40px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+}
+@media screen and (min-width:250px) and (max-width: 300px){
+    .next {
+        right: -710px;
+    }
+    .caption{
+        left: 70%;
+        width: 244%;
+    }
+    .caption h1{
+        font-size: 40px;
+    }
+    .addChannel h1, h4{
+        font-size: 15px;
+    }
+    .txt_field label{
+        font-size: 12px;
+    }
+    .txt_field_label label{
+        top: 65%;
+    }
+    .search-container input{
+        left: 300px;
+    }
+    .search-container button{
+        left: 589px;
+        right: unset;
+    }
+    .cloudIcon{
+        right: unset;
+        left: 640px;
+    }
+    #userIcon img{
+        right: unset;
+        left: 706px;
+    }
+    #menu{
+        right: unset;
+    }
+}

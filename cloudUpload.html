@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Readiness TV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/cloudUpload.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="logo-col">
+                <a href="Index.html"><img id="logo" src="IMG/readinessTVLogopng.png" alt=""></a>
+            </div>
+            <div id="navigation">
+                <div id="search-bar" class="search-container">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div id="cloudUpload">
+                    <a href="cloudUpload.html" id="cloud"> <img src="./IMG/cloud.png" alt="" class="cloudIcon"></a>
+                </div>
+                <span id="userIcon">
+                    <a href="Login.html"><img src="Img/userIcon2.png" alt="" id="user"></a>
+                </span>
+
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="upload_container">
+        <div class="upload_box">
+            <div class="cloudHeading">
+                <h2>Upload Videos Here</h2>
+                <p>You can drag and drop your files here</p>
+            </div>
+            <div class="innerUplodeContainer">
+                <p>
+                    <span class="drag-area">
+                        <div class="Icon"><img src="./IMG/cloud-uploadIcon.png" alt=""></div><br>
+                        <input type="file" draggable="true" id="upload">
+                        <label class="lblupload" for="upload" onclick="openFields()">Upload file</label>
+                    </span>
+                    <br>
+                    <br>
+                    <br>
+                    <span class="enter_video_url">
+                        <a href="#" id="upload_vid_link" onclick="openVidURL()">Enter file URL </a>
+                    </span>
+                </p>
+            </div>
+        </div>
+        <div class="uploadForm" id="uploadForm">
+            <form action="post" id="uplodFiles">
+                <div class="uploadData" id="uploadData">
+                    <div class="form-element">
+                        <label for="vid_name">Video Name</label>
+                        <input id="vid_name" type="text" required>
+                    </div>
+                    <div class="form-element">
+                        <div class="textArea">
+                            <label for="descripTxt">Description</label>
+                            <textarea placeholder="Channel description, #tag" name="descriptionTxt" id="descripTxt"
+                                cols="40" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <label>Channel Name</label>
+                        <input type="" required>
+                    </div>
+                    <div class="upload_cancel_btn">
+                        <input type="submit" class="channelBtn" value="Upload">
+                        <input type="button" class="channelBtn" value="Cancel" onclick="closeFields()">
+                    </div>
+                </div>
+        </div>
+        </form>
+        <form action="post" id="uplodurl">
+            <div class="url_video_upload">
+                <div class="form-element_vid_url">
+                    <label for="vid_url">Video URL <a href="#" class="backBtn" onclick="MoveToUploadForm()">
+                            < Back</a></label>
+                    <input id="vid_url" type="text" required onkeypress="display_other_field()">
+                </div>
+                <div class="otherField">
+                    <div class="form-element">
+                        <label for="vid_url_name">Video Name</label>
+                        <input id="vid_url_name" type="text" required>
+                    </div>
+                    <div class="form-element">
+                        <div class="textArea">
+                            <label for="descripTxturl">Description</label>
+                            <textarea placeholder="Channel description, #tag" name="descriptionTxt" id="descripTxturl"
+                                cols="40" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-element">
+                        <label>Channel Name</label>
+                        <input type="" required>
+                    </div>
+                </div>
+            </div>
+            <div class="upload_cancel_btn" id="upload_cancel_btn">
+                <input type="submit" class="channelBtn" value="Upload">
+                <a href="Index.html"><input type="button" class="channelBtn" value="Cancel"></a>
+            </div>
+
+        </form>
+        <div class="closebtn">
+            <a href="Index.html"><button class="redirectToHomeBtn">Close</button></a>
+        </div>
+
+
+        <script src="Script.js"></script>
+</body>
+
+</html>

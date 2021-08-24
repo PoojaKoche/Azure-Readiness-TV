@@ -1,0 +1,117 @@
+/* Added background to whole contact us web page */
+body{
+    background-image: linear-gradient(to bottom,rgb(62 62 60),rgb(15 15 19 / 78%)), url(../IMG/patternBg2.jpg);
+    height: 100vh;
+}
+/* Styling elements in contact us heading, img... */
+.contact{
+    position: absolute;
+    top: 20%;
+    margin: 0 20px;
+}
+.contact h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    left: 15%;
+    margin: 15px 0;
+}
+.contact-box{
+    display: flex;
+}
+.contact-box img{
+    width: 50px;
+    height: 50px;
+    filter: invert(0.8);
+    margin: 0 40%;
+}
+hr{
+    color: rgb(65, 62, 62);
+    height: 200px;
+}
+.phone{
+    height: 200px;
+    width: 300px;
+    margin: 0 30px 0 77px;
+    padding: 25px 0;
+    text-align: center;
+    color: cyan;
+    font-size: 20px; 
+}
+.location{
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    color: cyan;
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 25px 0;
+
+}
+.email{
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    color: cyan;
+    font-size: 20px;
+    margin: 0 30px;
+    padding: 25px 0;
+}
+/* *********form CSS******** */
+.form{
+    position: absolute;
+    left: 10%;
+}
+.contact-input-field{
+    width: 31%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+#message{
+    margin: 10px 0;
+    width: 98%;
+}
+#submitBtn{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    color: black;
+    background: #65f1f1;
+    margin-bottom: 20px;
+}
+#submitBtn:hover{
+    box-shadow: 0 0 20px cyan;
+    border-color: cyan;
+    border: 2px solid cyan;
+    background: rgba(0, 0, 0, 0.342);
+    color: white;
+    transition: 1s;
+}
+/* *********************Responsive CSS******************** */
+@media only screen and (min-width: 200px) and (max-width:300px){
+    .contact{
+        top: 30%;
+        margin: 0;
+    }
+    .form{
+        left: 6%;
+    }
+    .phone{
+        margin: 0;
+    }
+    .contact-input-field{
+        width: 26%;
+    }
+    #message{
+        width: 84%;
+    }
+    #submitBtn{
+        width: 86%;
+    }
+}

@@ -1,0 +1,120 @@
+/* added background to the about web page */
+body{
+    background-image: linear-gradient(to bottom,rgb(79 72 72 / 21%),rgb(15 15 19 / 61%)), url(../IMG/patternBg6.jpg);
+    font-family: sans-serif;
+}
+/* styling elements in about web page */
+.about{
+    position: absolute;
+    top: 20%;
+    margin: 0 20px;
+}
+.about h1{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.about p{
+    color: #ebdada;
+    font-size: 15px;
+    margin: 10px;
+}
+/* styling for our team */
+.team-container{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 27%;
+}
+.col1{
+    margin: 15px;
+}
+/* adjust height width of team members inside our team  */
+.col1 img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+.col1 img:hover{
+    border: 5px solid cyan;
+    transition: 0.9s ease;
+    transform: scale(0.9);
+}
+/* style names of all the team members in our team */
+.col1 h6{
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+}
+/* style job designation of all team member */
+.col1 p{
+    color: #f5f1ef;
+    text-align: center;
+    font-size: 12px;
+}
+/* **************************Responsive CSS************************ */
+@media only screen and (min-width: 1150px) and (max-width:1240px){
+    .about{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 1050px) and (max-width:1150px){
+    .about{
+        width: 110%;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width:1050px){
+    .about{
+        width: 115%;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width:1000px){
+    .about{
+        width: 131%;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width:900px){
+    .about{
+        width: 138%;
+        left: 10%;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width:800px){
+    .about{
+        width: 160%;
+        left: 5%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width:700px){
+    .about{
+        width: 187%;
+        left: 7%;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 600px){
+    .about{
+        width: 208%;
+        left: 10%;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px){
+    .about{
+        width: 244%;
+        left: 18%;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px){
+    .about{
+        width: 300%;
+        left: 40%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 300px){
+    .about{
+        width: 300%;
+        left: 40%;
+    }
+    .team-container{
+        left: 20%;
+    }
+}

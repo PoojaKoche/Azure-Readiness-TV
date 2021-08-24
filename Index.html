@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Readiness TV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="logo-col">
+                <a href="Index.html"><img id="logo" src="IMG/readinessTVLogopng.png" alt=""></a>
+            </div>
+            <div id="navigation">
+                <div id="search-bar" class="search-container">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div id="cloudUpload">
+                    <a href="cloudUpload.html" id="cloud"> <img src="./IMG/cloud.png" alt="" class="cloudIcon"></a>
+                </div>
+                <span id="userIcon">
+                    <a href="Login.html"><img src="Img/userIcon2.png" alt="" id="user"></a>
+                </span>
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="slide-container">
+        <div class="slide">
+            <img src="IMG/slide1.jpg" alt="slider-img">
+            <div class="caption">
+                <h1>Your Vision. Your TV.</h1>
+                <p>Turn your ideas into solutions faster using a trusted cloud which is designed for you using a trusted
+                    cloud which is designed.
+                </p>
+                <button class="channelBtn" onclick="openForm()" type="button">Add Channel</button>
+                <div class="centerChannelForm" id="addChannelForm">
+                    <form action="post" id="formToAddChannel">
+                        <div class="addChannel" id="addChannel">
+                            <h1 class="formHeading">Create a Channel</h1>
+                            <h4>Set up a channel to orgnaize your videos</h4>
+                            <div class="txt_field">
+                                <input type="text" required>
+                                <label>Channel Name</label>
+                            </div>
+                            <div class="txt_field">
+                                <div class="textArea">
+                                    <textarea placeholder="Channel description, #tag" name="descriptionTxt"
+                                        id="descripTxt" cols="40" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="txt_field_label">
+                                <label>Choose Channel Image (png,jpeg,jpg only)</label>
+                                <input type="file" accept="image/png, image/jpeg, image/jpg" required>
+                            </div>
+                            <input type="submit" class="channelBtn" value="Create">
+                            <input type="button" class="channelBtn" value="Cancel" onclick="closeForm()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="IMG/Slide2.jpg" alt="slider-img">
+            <div class="caption">
+                <h1>Welcome</h1>
+                <p>This is the new way to express your knowledge with others and shearing knowledge. Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit. Itaque, qui modi provident odio sint quia consequatur iste,
+                    rem unde molestiae impedit similique voluptatum?</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="IMG/Slide3.jpg" alt="slider-img">
+            <div class="caption">
+                <h1>Here you go</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, earum maiores aliquid amet vel
+                    accusantium sint veniam libero distinctio. Nobis a nisi sapiente vitae, magni et, deserunt ad quidem
+                    temporibus cupiditate itaque id!</p>
+            </div>
+        </div>
+    </div>
+    <span id="leftArrow" class="arrow prev" onclick="controller(-1)">&#60;</span>
+    <span id="rightArrow" class="arrow next" onclick="controller(1)">&#62;</span>
+    <script src="Script.js"></script>
+</body>
+
+</html>

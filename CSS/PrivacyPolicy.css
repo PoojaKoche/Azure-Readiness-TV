@@ -1,0 +1,83 @@
+/* background Img for whole body */
+body{
+    background-image: linear-gradient(to bottom,rgb(62 62 60),rgb(15 15 19 / 78%)), url(../IMG/patternBg4.jpg);
+   font-family: sans-serif;
+
+}
+/* styling headings, paragraph */
+.privacy{
+    position: absolute;
+    top: 25%;
+    margin: 0 20px;
+}
+.privacy h1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+.privacy p{
+    color: #bebdbdf5;
+}
+.privacy h4{
+    color: white;
+    font-size: 20px;
+}
+
+/* **************************Responsive CSS************************ */
+@media only screen and (min-width: 1050px) and (max-width:1150px){
+    .privacy{
+        width: 110%;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width:1050px){
+    .privacy{
+        width: 115%;
+    }
+}
+@media only screen and (min-width: 900px) and (max-width:1000px){
+    .privacy{
+        width: 131%;
+    }
+}
+@media only screen and (min-width: 800px) and (max-width:900px){
+    .privacy{
+        width: 138%;
+        left: 10%;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width:800px){
+    .privacy{
+        width: 160%;
+        left: 5%;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width:700px){
+    .privacy{
+        width: 187%;
+        left: 7%;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width: 600px){
+    .privacy{
+        width: 208%;
+        left: 10%;
+    }
+}
+@media only screen and (min-width: 400px) and (max-width: 500px){
+    .privacy{
+        width: 244%;
+        left: 18%;
+    }
+}
+@media only screen and (min-width: 300px) and (max-width: 400px){
+    .privacy{
+        width: 300%;
+        left: 40%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 300px){
+    .privacy{
+        width: 300%;
+        left: 40%;
+    }
+}

@@ -1,0 +1,228 @@
+/* Added background for whole cloud upload web page */
+body{
+    margin: 0;
+    padding: 0;
+    background: url('../IMG/patternBg5.png');
+    filter: brightness(0.7);
+    height: 100vh;
+    font-family: sans-serif;
+}
+/* styling elements in cloud upload web page */
+.cloudHeading h2{
+    font-size: 25px;
+    padding: 10px;
+    color: black;
+}
+.cloudHeading p{
+    font-size: 18px;
+    color: black;
+    padding: 0 0 22px 0;
+}
+.Icon{
+    position: relative;
+    top: 30px;
+}
+.Icon img{
+  height: 45px;
+}
+.upload_container{
+    position: absolute;
+    top: 22%;
+    left: 40%;
+}
+.innerUplodeContainer{
+    left: 10%;
+    background: #ffffffa6;
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    text-align: center;
+}
+.innerUplodeContainer:hover{
+    box-shadow: 0 0 20px rgb(227 12 181);
+}
+.closebtn{
+    position: absolute;
+    left: 20px;
+    padding: 40px;
+}
+.redirectToHomeBtn{
+    padding: 10px 30px;
+    border-radius: 10px;
+    background: #05384b;
+    color: white;
+    font-size: 16px;
+}
+.redirectToHomeBtn:hover{
+    box-shadow: 0 0 20px #042841;
+    border-color: #042841;
+    border: 2px solid #042841;
+    background: #ffffffab;
+    color: #000000;
+    transition: 1s;
+}
+#upload{
+    position: relative;
+    top: 22px;
+    visibility: hidden;
+}
+/*styling for file upload form */
+#uploadForm{
+    display: none;
+}
+.uploadForm{
+    width: 400px;
+    margin: 50px 0;
+}
+.form-element label{
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.form-element input{
+    width: 100%;
+    border: 1px solid;
+    background: #c0b9b930;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+.form-element textarea{
+    background: #c0b9b930;
+    width: 100%;
+    outline: none;
+}
+.upload_cancel_btn{
+    margin: 20px 70px;
+}
+.lblupload{
+    color: blue;
+}
+.lblupload:hover{
+    color: blueviolet;
+}
+#upload_vid_link{
+    color: blue;
+    text-decoration: none;
+}
+#upload_vid_link:hover{
+    color: blueviolet;
+}
+.channelBtn{
+    padding: 5px 20px;
+    border: 1px solid;
+    background: #05384b;
+    border-radius: 30px;
+    outline: none;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.channelBtn:hover{
+    box-shadow: 0 0 20px #042841;
+    border-color: #042841;
+    border: 2px solid #042841;
+    background: #ffffffab;
+    color: #000000;
+    transition: 1s;
+}
+.form-element_vid_url label{
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.form-element_vid_url input{
+    width: 100%;
+    border: 1px solid;
+    background: #c0b9b930;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    outline: none;
+}
+.form-element_vid_url, .otherField{
+    display: none;
+}
+#upload_cancel_btn{
+    display: none;
+}
+.backBtn{
+    float: right;
+    color: blue;
+    text-decoration: none;
+}
+.backBtn:hover{
+   color: blueviolet;
+}
+
+/* ****************************Responsive CSS ********************************* */
+@media only screen and (min-width: 800px) and (max-width:950px){
+    .upload_container{
+        left: 60%;
+    }
+    .upload_cancel_btn {
+        margin: 20px 0;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width:799px){
+    .upload_container{
+        left: 63%;
+    }
+    .upload_cancel_btn {
+        margin: 20px 0;
+    }
+    .cloudHeading h2{
+        font-size: 20px;
+    }
+    .cloudHeading p{
+        font-size: 16px;
+    }
+    
+}
+@media only screen and (min-width: 400px) and (max-width:599px){
+    .upload_container{
+        left: 100%;
+    }
+    .upload_cancel_btn {
+        margin: 20px 0;
+    }
+    .cloudHeading h2{
+        font-size: 22px;
+    }
+    .cloudHeading p{
+        font-size: 12px;
+    }
+    .form-element_vid_url label{
+        Font-size: 12px;
+    }
+    .form-element_vid_url input{
+        width: unset;
+    }
+    .channelBtn{
+        font-size: 12px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width:399px){
+    .upload_container{
+        left: 150%;
+    }
+    .upload_cancel_btn {
+        margin: 20px 0;
+    }
+    .cloudHeading h2{
+        font-size: 18px;
+    }
+    .cloudHeading p{
+        font-size: 12px;
+    }
+    .form-element_vid_url label{
+        Font-size: 12px;
+    }
+    .form-element_vid_url input{
+        width: unset;
+    }
+    .channelBtn{
+        font-size: 12px;
+    }
+}

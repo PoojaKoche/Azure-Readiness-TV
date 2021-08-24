@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Readiness TV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div id="logo-col">
+                <a href="Index.html"><img id="logo" src="IMG/readinessTVLogopng.png" alt=""></a>
+            </div>
+            <div id="navigation">
+                <div id="search-bar" class="search-container">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div id="cloudUpload">
+                    <a href="cloudUpload.html" id="cloud"> <img src="./IMG/cloud.png" alt="" class="cloudIcon"></a>
+                </div>
+                <span id="userIcon">
+                    <a href="Login.html"><img src="Img/userIcon2.png" alt="" id="user"></a>
+                </span>
+
+                <div id="menu" onclick="onClickMenu()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contact-section">
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <div class="contact-box">
+                <div class="phone">
+                    <img src="./IMG/phone.png" alt=""><br><br>
+                    <p>+91 0123478568<br>
+                        +91 1255 12 1222</p>
+                </div>
+                <hr>
+                <div class="location">
+                    <img src="./IMG/location.png" alt=""><br><br>
+                    <p>
+                        587 Marvon St.<br>
+                        Greensburg, PA 15601,<br>
+                        Australia
+                    </p>
+                </div>
+                <hr>
+                <div class="email">
+                    <img src="./IMG/email.png" alt=""><br><br>
+                    <p>example@example.com <br>
+                        myexample2@example.com</p>
+                </div>
+            </div>
+            <div class="form">
+                <input type="text" class="contact-input-field" placeholder="Your Name">
+                <input type="tel" class="contact-input-field" placeholder="Your Mobile">
+                <input type="email" class="contact-input-field" placeholder="Your Email">
+                <textarea name="message" id="message" cols="50" rows="5" placeholder="Your Message Here"></textarea>
+                <input type="button" id="submitBtn" value="Submit">
+            </div>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+
+</html>
